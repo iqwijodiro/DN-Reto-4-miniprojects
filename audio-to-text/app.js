@@ -30,7 +30,9 @@ stopBtn.addEventListener('click', () => {
   recognition.stop();
   listening = false
   console.log('aborted')
-  msgEl.innerHTML += '<div>Vuelve a iniciar el servicio para escuchar</div>';
+  while (!msgEl) {
+    msgEl.innerHTML += '<div>Vuelve a iniciar el servicio para escuchar</div>';
+  }
 })
 
 // // Escuchamos el evento result que es lo obtenido del reconocimiento
