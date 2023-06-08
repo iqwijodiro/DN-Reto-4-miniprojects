@@ -13,13 +13,21 @@
     <title>Adivina el numero</title>
   </head>
   <body>
-    <img src="mic.png" alt="Di tu número" />
+    <div class="container">
+      <img src="mic.png" alt="Di tu número" width="100"/>
+  
+      <h1>Adivina el numero entre 1 - 100</h1>
+  
+      <h3>En voz alta, di el número a adivinar</h3>
+  
+      <div class="control">
+        <button id="listen">Escuchar</button>
+        <button id="stop">Detener</button>
+      </div>
+  
+      <div id="msg" class="msg"></div>
 
-    <h1>Adivina el numero entre 1 - 100</h1>
-
-    <h3>En voz alta di el número a adivinar</h3>
-
-    <div id="msg" class="msg"></div>
+    </div>
 
     <script src="app.js"></script>
   </body>
